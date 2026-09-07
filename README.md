@@ -1,52 +1,44 @@
-# Age Eligibility Checker
+# Simple Age Checker Website
 
-A production-grade, highly optimized frontend utility that categorizes user age groups based on explicit corporate business logic rules. This application features a hardened data-validation matrix engineered to intercept toxic inputs, layout breaking anomalies, and floating-point data states.
+This is a basic website that tells you if you are a minor, an adult, middle-aged, a senior citizen, or elderly based on the age you type in. 
+
+I built this project to learn how HTML, CSS, and JavaScript work together. It also checks for mistakes (like blank inputs, negative numbers, or text) so the website won't break.
 
 🔗 **[Live Demo Link](https://sandipbeghaa.github.io/age-checker/)** 
 
-## 🚀 Key Features
+## ✨ Features
 
-* **Harden Validation Architecture:** Implements a strict, 5-tier validation matrix to securely block empty strings, negative integers, zero values, floating-point decimals, and non-numeric system corruptors (`NaN`).
-* **Optimized Evaluation Matrix:** Utilizes sequential top-down logical routing to eliminate operational redundancy and minimize CPU execution overhead.
-* **Separation of Concerns:** Adheres to industry best practices by maintaining clean isolation between structure (HTML5), stylistic presentation (CSS3), and runtime logic processing (JavaScript ES6+).
-* **Responsive Card UI:** Built with dynamic Flexbox rules to center and adapt gracefully across desktop and mobile screens without using fragile hardcoded heights.
+* **Checks for Errors:** If you type text, leave it blank, or enter a negative number, the website will tell you to enter a valid age.
+* **Smart Choices:** The code uses simple rules to group your age correctly.
+* **Clean Code:** Keeps HTML (structure), CSS (looks), and JavaScript (brain) in separate files.
+* **Easy to Look At:** The box is centered on the screen and looks clean on both laptops and phones.
 
-## 🛠️ Tech Stack
+## 🛠️ Built With
 
-* **Structure:** HTML5 (Semantic elements & accessible form tracking)
-* **Styling:** CSS3 (Flexbox & Box-sizing optimization models)
-* **Logic Engine:** Vanilla JavaScript (ES6+ Runtime Environment)
+* **HTML5:** For the page boxes, text, and button.
+* **CSS3:** For colors, fonts, and centering the box.
+* **JavaScript:** For doing the math and changing the text on the screen.
 
-## 📊 Business Logic Matrix
+## 📊 The Age Rules
 
-The application's logic engine evaluates incoming values and assigns them to the following strict operational boundaries:
+Here is how the website groups the numbers you type:
 
-| Input Condition | Processing Path / Output Target |
-| :--- | :--- |
-| `""` / `x <= 0` / `> 120` / `NaN` / Decimals | Validation Guard Rail Intercept \rightarrow **Error Message** |
-| `1` to `17` | **Minor** |
-| `18` to `39` | **Adult** |
-| `40` to `59` | **Middle-aged** |
-| `60` to `69` | **Senior Citizen** |
-| `70+` | **Elderly** |
+* **0 or lower / Text / Blank:** Shows an error message.
+* **1 to 17:** "You are a Minor."
+* **18 to 39:** "You are an Adult."
+* **40 to 59:** "You are Middle-aged."
+* **60 to 69:** "You are a Senior citizen."
+* **70 or older:** "You are Elderly."
 
-## 📦 Local Installation & Setup
+## 💻 How to Run It on Your Computer
 
-This repository contains completely vanilla source files and requires no complex build environments or external dependencies to run.
+1. Download these project files to your computer.
+2. Double-click the `index.html` file.
+3. It will open instantly in your web browser! No installation needed.
 
-1. Clone the project locally:
-   ```bash
-   git clone https://github.com
-   ```
-2. Navigate into the application root:
-   ```bash
-   cd age-checker
-   ```
-3. Open `index.html` directly in any modern, compliant web browser.
+## 🧠 What I Learned From This Project
 
-## 🎓 Core Competencies Developed
-
-Through this engineering sprint, I advanced my knowledge in:
-* **DOM Query Isolation Pipelines:** Working with `document.querySelector` to accurately bind state inputs on target event fires.
-* **Defensive Program Design:** Implementing sequential evaluation gates and early function exit terminations using `return`.
-* **The NaN & Floating-Point Anomalies:** Debugging unique runtime type evaluations using built-in system hooks like `Number.isNaN()` and `Number.isInteger()`.
+* How to use `document.querySelector` to find HTML boxes from JavaScript.
+* How to use `addEventListener` to run code only when a button is clicked.
+* How to use `if` and `else` to make decisions in code.
+* How to catch input errors before they break the math.
