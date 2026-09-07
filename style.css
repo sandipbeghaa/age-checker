@@ -1,0 +1,58 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f9;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+.checker {
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    background-color: rgb(103, 247, 247);
+    border-radius: 14px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.checkage {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.checkage .numberbox {
+    width: 80%;
+    padding: 8px;
+    background: rgb(253, 255, 255);
+    border: 1px rgb(17, 25, 25);
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    display: block;
+    background: rgb(1, 50, 93);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    width: 60%;
+    padding: 10px 0;
+    margin: 20px auto;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.result {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    min-height: 24px;
+}
